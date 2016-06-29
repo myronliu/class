@@ -1,0 +1,36 @@
+/**
+ * Created by jiang on 15/12/1.
+ */
+.Success{
+  &>.main{
+    @extend .clearfix;
+    margin: 30px 20px 30px 20px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    &>img{
+      //float: left;
+      -webkit-box-flex: 2;
+      width: 30px;
+      height: 30px;
+    }
+    &>div{
+      -webkit-box-flex: 2;
+      display: block;
+      margin-left: 10px;
+      &>div:first-child{
+        color: $titleColor;
+        font-size: 14px;
+      }
+      &>div:nth-child(2){
+        color: $ftColor;
+        font-size: 13px;
+      }
+      //float: left;
+    }
+
+  }
+  &>.button{
+    padding:5px 15px 5px 15px;
+
+  }
+}

@@ -1,0 +1,50 @@
+.icontitlecell{
+  @extend .clearfix;
+  display: -webkit-box;
+  -webkit-box-orient:horizontal;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #444444;
+  font-size: 15px;
+  .left {
+    -webkit-box-flex:2;
+    /*font-weight: bold;*/
+    i {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+      margin-right: 8px;
+      background-size:contain;
+    }
+  }
+  .right{
+    @extend .clearfix;
+    position: absolute;
+    right: 10px;
+    &>span{
+      display: inline-block;
+      margin-right: 5px;
+     }
+    &>span:first-child>span:nth-child(2){
+      color: $ftColor;
+    }
+
+  }
+  .moneycolor {
+    color: #DD461A;
+  }
+  .jianTou{
+    color: gray;
+    position: absolute;
+    right: -5px;
+    top: -2px;
+    font-size: 24px;
+  }
+  p {
+
+    color: #444444;
+  }
+}

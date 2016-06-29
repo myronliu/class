@@ -1,0 +1,48 @@
+/**
+ * Created by jiang on 15/10/30.
+ */
+.navigetion{
+  @extend .clearfix;
+  background-color:#3FA9F5;
+  padding:6px;
+  position: relative;
+  &>.back{
+    float: left;
+    line-height: 2.4em;
+    position: absolute;
+    margin-top: -1px;
+    width: 44px;
+    &>.jianTou{
+      color: white;
+      margin-left: 6px;
+      font-size: 34px;
+    }
+  }
+
+
+  .title{
+    color:#fff;
+    text-align:center;
+    line-height:2em;
+    overflow:hidden;
+    width: 100%;
+    height:32px;
+    font-size:16px;
+  }
+  .right{
+    color: white;
+    right: 7px;
+    top: 12px;
+    position: absolute;
+    &>.item{
+      margin-left: 4px;
+      margin-right: 4px;
+      padding: 10px 5px 10px 5px;
+    }
+    &>.icon{
+      height: 25px;
+      width: 25px;
+    }
+  }
+
+}

@@ -1,0 +1,65 @@
+.register_sales{
+  background: #ffeddc;
+  .info{
+    background: #feef7d;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    &>img{
+      height: 20px;
+      display: inline-block;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+    &>span{
+      line-height: 30px;
+      height: 30px;
+      vertical-align: top;
+    }
+  }
+  &>img{
+    width:100%;
+  }
+  .center_input_first{
+    margin-top: 10px;
+    padding:7px 0px 7px 0px;
+    border-top:1px solid $borderColor;
+    border-bottom:1px solid $borderColor;
+    background: white;
+  }
+  .center_input{
+    padding:7px 0px 7px 0px;
+    border-top:1px solid $borderColor;
+    border-bottom:1px solid $borderColor;
+    background: white;
+    margin-bottom: 10px;
+  }
+  .redTiShi{
+    color: red;
+    font-size: 12px;
+    margin-left: 15px;
+  }
+  .checkboxStyle{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .protocolStyle{
+    font-size:13px;
+    display:inline-block;
+    position:absolute;
+    .aStyle{
+      text-decoration:none;
+      color: $blueAColor;
+    }
+  }
+  .lr15 {
+    margin-left:$px15;
+    margin-right:$px15;
+  }
+  .button{
+    padding:$px15;
+  }
+}

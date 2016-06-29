@@ -1,0 +1,35 @@
+.myinvestcell{
+  margin-bottom: 10px;
+  color: $titleColor;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: white;
+  border-top: 1px ;
+  &>div{
+    @extend .clearfix;
+    padding-bottom: 5px;
+    &>span{
+      padding-left: 15px;
+      padding-right: 15px;
+
+    }
+    &>span:last-child{
+      float: right;
+    }
+    &>img{
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      margin-left: -9px;
+    }
+    .myinvestcell-price{
+      color: $priceColor;
+    }
+  }
+  &>div:first-child{
+    font-size: 15px;
+  }
+  &>div:last-child{
+    font-size: 13px;
+  }
+}

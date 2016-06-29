@@ -1,0 +1,242 @@
+//*------------------------------------------------*/
+//*   Base Rules
+//*------------------------------------------------*/
+
+//*==========  变量  ==========*/
+
+//* 配色 */
+$bgColor: #F2F2F2;       // 主要背景色
+$ftColor: #878787;		// 主要字体颜色
+$lnkColor: #222222;   // 链接色
+$emColor: #FB373F;    // 重点显示颜色
+$hotColor: #F9815E;   // 热点颜色
+$btnColor: #F74F19;   // 按钮颜色
+$priceColor:#FF3830;          //金钱颜色
+
+$cmptBgColor: #F8F8F8;  // 组件背景色
+$borderColor: #F5F5F5;  // 边框颜色
+$titleColor: #1C1C1C;   // 标题颜色
+$blueAColor: #3FA9F5;   // 链接颜色
+
+$titlebg:#FBFBFB;//提示信息背景色
+
+//* 字体 */
+$baseFontSize: 12px;    // 基础字体大小
+$btnFontSize: 18px;
+$titleFontSize: 20px;
+
+//* 布局 */
+$pgWidth: 1200px;
+$panelMargin: 20px;
+
+//* 边框 */
+$btnRadius: 2px;
+
+//* 15px */
+$px15: 15px;
+
+//*==========  基础元素样式  ==========*/
+
+body {
+	font: #{$baseFontSize + 2}/1.5 microsoft yahei;
+	padding: 0;
+	margin: 0;
+	color: $ftColor;
+	background: $bgColor;
+  // overflow-x: hidden;
+}
+
+em {
+  color: $emColor;
+  font-style: normal;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #f63;
+}
+
+//*==========  基础样式类  ==========*/
+
+/* 使float的元素可以撑开父级div */
+.clearfix:after{ 
+  visibility: hidden; 
+  display: block; 
+  font-size: 0; 
+  content: "."; 
+  clear: both; 
+  height: 0; 
+} 
+
+* html .clearfix{zoom: 1;}
+
+*:first-child + html .clearfix{zoom: 1;}
+
+@for $i from 1 to 10 {
+	.f#{12 + $i}{
+		font-size: $baseFontSize + $i;
+	}
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: "";
+}
+
+//*==========  通用组件样式类  ==========*/
+.container {
+  margin: 0px auto;
+}
+
+.btn {
+  @include border-radius($btnRadius);
+  border: 2px solid;
+  padding: 5px 20px;
+  font-size: $btnFontSize;
+
+  &.disabled {
+    cursor: default;
+  }
+}
+
+.btn-primary {
+  @extend .btn;
+  border-color: $borderColor;
+  background-color: $btnColor;
+  border-color: $btnColor;
+  color: white;
+
+  &:hover {
+    background-color: #4cb0f9;
+    border-color: #4cb0f9;
+  }
+
+  &:active {
+    background: #df4c04;
+    border-color: #df4c04;
+  }
+}
+
+.btn-secondary {
+  @extend .btn;
+  background-color: white;
+
+  &:hover {
+    background-color: #4cb0f9;
+    border-color: #4cb0f9;
+  }
+}
+
+.btn-myhry {
+  @extend .btn;
+  background-color: white;
+  color:#999;
+
+  &:hover {
+    background-color: #4cb0f9;
+    border-color: #ff884f;
+  }
+}
+
+.btn-gray {
+  border-color: $ftColor;
+  color: $ftColor;
+}
+
+.panel {
+  @extend .clearfix;
+  @include solid-border($borderColor);
+
+  &>.title {
+    @extend .clearfix;
+    @include solid-border($borderColor, bottom);
+
+    line-height: 30px;
+    padding: 10px 20px;
+    background-color: #FFFEFC;
+    color:#333;
+
+    .caption {
+      @include titleFont;
+      float: left;
+
+    }
+
+    .action {
+      float: right;
+    }
+  }
+
+  &>.content {
+    @extend .clearfix;
+  }
+}
+
+.progress-bar {
+  @include progress-bar;
+}
+
+//*========== 分隔线 ==========*/
+.line {
+  border-bottom:1px dashed  #DBDBDD;
+  padding:12px 0 0 0;
+  width:100%;
+  position: absolute;
+  left: 0px;
+}
+
+//*==========  表单中元素样式  ==========*/
+.form-group 
+{
+  label
+  {
+    color: #626262;
+    min-width: 156px;
+    display: inline-block;
+    text-align: right;
+    *height:66px;
+  }
+  .blue
+  {
+    color: #6589BB;
+    font-size:16px;
+    
+  }
+}
+.lagre
+{
+  width:340px !important;
+}
+.lagre-s
+{
+  width:150px !important;
+}
+.medium
+{
+  width:83px !important;
+}
+
+.small
+{
+  width: 33px !important;
+}
+input[type="button"]
+{
+ cursor:pointer;
+}
+

@@ -1,0 +1,29 @@
+.login{
+  &>img{
+    width:100%;
+  }
+  .center_input{
+    margin-top: 10px;
+    padding:7px 0px 7px 0px;
+    border-top:1px solid $borderColor;
+    border-bottom:1px solid $borderColor;
+    background: white;
+    &>hr{
+      height: 1px;
+      border: 0px;
+      background-color: $borderColor;
+      margin: 7px 0px 7px 15px;
+    }
+  }
+  .button{
+    padding:15px;
+    a{
+      display: inline-block;
+      color: $blueAColor;
+      margin-top: 10px;
+    }
+    a:last-child{
+      float: right;
+    }
+  }
+}

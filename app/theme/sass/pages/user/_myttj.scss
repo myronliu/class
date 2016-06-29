@@ -1,0 +1,89 @@
+.myttj{
+  &>.data {
+    background: url('/images/h5/bg.png')  no-repeat;
+    background-size:cover ;
+    padding-top:10px;
+
+    &>.my-money{
+      height: 100px;
+      &>i{
+        display: inline-block;
+        background: url('/images/h5/zsy.png')  no-repeat;
+        width: 16px;
+        height: 16px;
+        margin-left: 15px;
+        position: absolute;
+        margin-top: 3px;
+      }
+      &>.title {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 12px;
+        margin-left: 35px;
+      }
+      &>.title-right {
+        float: right;
+        color: #ffffff;
+        margin: 0px 15px 0 0;
+        font-size: 12px;
+      }
+      &>p{
+        text-align: center;
+        font-size: 46px;
+        color: #ffffff;
+        padding-bottom: 10px;
+      }
+    }
+    &>.my-earn{
+      @extend .clearfix;
+      height: 58px;
+      color: #ffffff;
+      border-top: 1px solid rgba(245,245,245,0.3);
+      &>div{
+        width:50%;
+        float: left;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        &>span:first-child{
+          font-size: 12px;
+          display: block;
+        }
+        &>span:last-child{
+          font-size: 17px;
+          display: block;
+        }
+      }
+      &>div:last-child{
+        border-left: 1px solid rgba(245,245,245,0.3);
+        margin-left: -1px;
+      }
+    }
+
+
+  }
+  &>.my-earn{
+    @extend .clearfix;
+    color: $titleColor;
+    background: white;
+    &>div{
+      width:50%;
+      float: left;
+      text-align: center;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      &>span:first-child{
+        font-size: 12px;
+        display: block;
+      }
+      &>span:last-child{
+        font-size: 17px;
+        display: block;
+      }
+    }
+  }
+  &>.button{
+    margin-top: 50px;
+    padding:15px;
+  }
+}

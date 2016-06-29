@@ -1,0 +1,29 @@
+.findloginpwd{
+  .centerDiv{
+    margin-top: 0px;
+    background: white;
+  }
+  .button{
+    padding:15px;
+
+  }
+  .tip{
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    &>img{
+      height: 20px;
+      display: inline-block;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+    &>span{
+      line-height: 30px;
+      height: 30px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  } 
+
+
+}

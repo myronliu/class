@@ -1,0 +1,16 @@
+.layout{
+  min-height: 100%;
+  position: relative;
+  background: rgb(239,239,244);
+  .first_footer{
+    width:100%;
+    height:70px;
+    background: rgba(0,0,0,0);
+    padding-top: 20px;
+    position: relative;
+
+  }
+}
+#container{
+  height: 100%;
+}

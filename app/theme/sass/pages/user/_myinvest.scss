@@ -1,0 +1,84 @@
+/**
+ * Created by jiang on 15/11/10.
+ */
+.myinvest{
+  &>.data {
+    background: url('/images/h5/bg.png')  no-repeat;
+    background-size:cover ;
+    padding-top:10px;
+    margin-bottom: 10px;
+    &>.my-money{
+      &>.title {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 12px;
+        margin-left: 15px;
+      }
+      &>p{
+        text-align: center;
+        font-size: 46px;
+        color: #ffffff;
+        padding-bottom: 10px;
+      }
+    }
+    &>.my-earn{
+      @extend .clearfix;
+      color: #ffffff;
+      border-top: 1px solid rgba(245,245,245,0.3);
+      &>div{
+        width:50%;
+        float: left;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        &>span:first-child{
+          font-size: 12px;
+          display: block;
+        }
+        &>span:last-child{
+          font-size: 17px;
+          display: block;
+        }
+      }
+      &>div:last-child{
+        border-left: 1px solid rgba(245,245,245,0.3);
+        margin-left: -1px;
+      }
+    }
+
+
+  }
+  &>.my-earn{
+    @extend .clearfix;
+    color: $titleColor;
+    background: white;
+    &>div{
+      width:50%;
+      float: left;
+      text-align: center;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      &>span:first-child{
+        font-size: 12px;
+        display: block;
+      }
+      &>span:last-child{
+        font-size: 17px;
+        display: block;
+      }
+    }
+  }
+  &>.button{
+    &>img{
+      width: 130px;
+      height: 80px;
+    }
+    &>.next{
+      margin: 15px;
+      margin-top: -39px;
+    }
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+  }
+}

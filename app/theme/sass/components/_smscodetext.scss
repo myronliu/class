@@ -1,0 +1,32 @@
+.smscodetext{
+  @extend .clearfix;
+  padding-left: 15px;
+  font-size: 14px;
+  .title{
+    margin-top: 5px;
+    color: black;
+    display: inline-block;
+  }
+  .input{
+    margin-left: 5px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color:rgba(0,0,0,0) ;
+    width: 45%;
+    //outline:none;
+  }
+  .smsbutton{
+    float: right;
+    -webkit-appearance: none;
+    border: 0px;
+    border-left: 1px solid  $borderColor;
+    color:#3FA9F5;
+    font-size: 14px;
+    text-align: center;
+    background:white ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30%;
+  }
+}

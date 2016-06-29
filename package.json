@@ -1,0 +1,48 @@
+{
+  "name": "hiapp",
+  "version": "0.1.0",
+  "dependencies": {
+    "babel": "^5.8.29",
+    "body-parser": "^1.12.4",
+    "cookie-parser": "^1.4.0",
+    "director": "^1.2.7",
+    "es6-promise": "^2.0.1",
+    "evoflux": "~0.2.0",
+    "express": "~4.12.0",
+    "express-state": "^1.2.0",
+    "object-assign": "^2.0.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-swiper": "^0.1.4",
+    "react-tappable": "^0.7.1",
+    "react-tween-state": "^0.0.5",
+    "superagent": "^0.21.0",
+    "swipe-js-iso": "^2.0.1"
+  },
+  "devDependencies": {
+    "babelify": "^6.4.0",
+    "browser-sync": "~2.2.1",
+    "browserify": "~9.0.3",
+    "colors": "~1.0.3",
+    "compass": "^0.1.1",
+    "ejs": "^2.3.1",
+    "gulp": "~3.8.11",
+    "gulp-babel": "^5.3.0",
+    "gulp-html-replace": "^1.4.4",
+    "gulp-nodemon": "^1.0.5",
+    "gulp-open": "~0.3.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.1.0",
+    "node-jsx": "^0.12.4",
+    "reactify": "~1.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "~1.0.0"
+  },
+  "engines": {
+    "node": ">=4.2.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}

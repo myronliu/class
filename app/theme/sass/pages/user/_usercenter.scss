@@ -1,0 +1,68 @@
+.usercenter{
+  .data {
+    background: url('/images/h5/bg.png') no-repeat;
+    background-size: cover;
+  }
+
+  #my-money .title {
+    display: block;
+    padding:30px 0 0px 0px;
+    color: #ffffff;
+    text-align: center;
+  }
+  #my-money p{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+  #my-add-money {
+    color: #ffffff;
+    display: -webkit-box;
+    -webkit-box-orient:horizontal;
+    -webkit-box-pack:center;
+    border-top: 1px solid #EDAA83;
+    /*-webkit-box-align:center;///垂直居中*/
+    /*padding: 10px 0 10px 0;*/
+  }
+  #my-add-money p span {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+  }
+  #my-add-money .left {
+    -webkit-box-flex:1;
+    border-right: 1px solid #EDAA83;
+    padding: 10px 0 10px 0;
+
+  }
+  #my-add-money .right {
+    -webkit-box-flex:1;
+    padding: 10px 0 10px 0;
+  }
+  #my-add-money .left span:first-child, #my-add-money .right span:first-child {
+    font-size: 13px;
+  }
+  #my-add-money .left span:last-child, #my-add-money .right span:last-child {
+    font-size: 14px;
+  }
+  .part-bottom {
+    background-color: #ffffff;
+    margin-top:20px;
+  }
+
+  .out-submit {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .lognout .out-submit {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #E71B1B;
+    font-size: 15px;
+  }
+}

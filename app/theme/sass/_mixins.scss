@@ -1,0 +1,50 @@
+
+//*==========  Mixin  ==========*/
+
+// * Mixin */
+@mixin icon-background($url){
+  background: image-url(icon/#{$url}) no-repeat center;
+}
+
+@mixin li-horizontal {
+  display: inline;
+}
+
+@mixin float-left {
+  float: left;
+}
+
+@mixin float-right {
+  float: right;
+}
+
+@mixin solid-border($color: $borderColor, $direction: none){
+  @if $direction == none {
+    border: solid 1px $color;
+  } @else {
+    border-#{$direction}: solid 1px $color;
+  }
+}
+
+@mixin dashed-border($color: $borderColor, $direction: none){
+  @if $direction == none {
+    border: dashed 1px $color;
+  } @else {
+    border-#{$direction}: dashed 1px $color;
+  }
+}
+
+@mixin titleFont($size: $titleFontSize, $color: $titleColor) {
+	color: $color;
+	font-size: $size;
+}
+
+@mixin progress-bar($innerColor: $emColor, $outerColor: $borderColor) {
+  background-color: $outerColor;
+
+  &>.inner {
+    background-color: $innerColor;
+    border: 0px;
+    height: 2px;
+  }
+}

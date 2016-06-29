@@ -1,0 +1,26 @@
+.progress{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    background-color: #ffffff;
+    -webkit-box-pack: center;
+    &>.progress_chart {
+      width: 80%;
+      height: 5px;
+      border-radius: 2px;
+      background-color: #E1E1E1;
+      display: block;
+      overflow: hidden;
+      &>.progress_totalnum {
+        height: 100%;
+        background-color: #3FA1ED;
+        display: block;
+        border-radius: 2px;
+      }
+    }
+    &> .progress_num {
+      display: block;
+      margin-top: -10px;
+      margin-left: 10px;
+    }
+
+}

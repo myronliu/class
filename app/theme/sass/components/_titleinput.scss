@@ -1,0 +1,31 @@
+.title_input{
+ padding-left: 15px;
+ font-size: 14px;
+ &>.title{
+  color: black;
+  display: inline-block;
+ }
+ input[type=number]::-webkit-inner-spin-button,
+ input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+ }
+  &>.input{
+   font-size: 14px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-left: 5px;
+   //border-color:rgba(0,0,0,0) ;
+   -webkit-appearance: none;
+   outline: medium;
+   border:none;
+   outline:0;
+   //outline:none;
+  }
+  &>img{
+    width: 20px;
+    float: right;
+    margin-right: 10px;
+    padding-top: 5px;
+  }
+}

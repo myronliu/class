@@ -1,0 +1,70 @@
+.regsucc{
+  background-color: #FFFFFF;
+  .items{
+    text-align: center;
+    border:1px solid #7c7c7c;
+    ul{
+      width: 50%;
+      margin:0 auto;
+      text-align:left;
+      list-style-image:url("/images/h5/dian.png");
+      list-style-type:square;
+      li{
+        text-align:left;
+        height:30px;
+        line-height: 30px;
+      }
+    }
+
+  }
+  .note{
+    text-align: center;
+    p{
+      font-size: 20px;
+    }
+  }
+  .message{
+    text-align: center;
+    p{
+      font-size: 16px;
+      .info{
+        color:#F00;
+      }
+    }
+  } 
+  .centerDiv{
+    margin-top: 0px;
+    background: white;
+  }
+  .button{
+    padding:15px;
+
+  }
+  .banner{
+    align:center;
+    &>img{
+
+      width: 100%;
+    }
+  }
+  .tip{
+    background-color:#FFF391;
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    &>img{
+      height: 20px;
+      display: inline-block;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+    &>span{
+      line-height: 40px;
+      height: 40px;
+      display: inline-block;
+      vertical-align: top;
+    }
+  } 
+
+
+}

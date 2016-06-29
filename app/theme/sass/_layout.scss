@@ -1,0 +1,84 @@
+/*------------------------------------------------*/
+/*   Layout Rules
+/*------------------------------------------------*/
+
+/*==========  Base  ==========*/
+
+.header {
+    box-shadow: 0 0 8px 0px #D0D0D0;
+}
+
+.l-container {
+	@extend .container;
+	width: $pgWidth;
+}
+
+.l-mainContainer {
+	@extend .container;
+	width: 881px;
+}
+
+.l-sideContainer {
+	@extend .container;
+	width: 300px;
+}
+
+.l-top-notify {
+  @include solid-border(#FEECBC);
+  text-align: center;
+  background-color: #FFFDF3;
+  line-height: 32px;
+}
+
+.l-top-link {
+  @include solid-border;
+  line-height: 32px;
+}
+
+/*==========  Header  ==========*/
+
+.top-notify {
+  @extend  .l-container;
+}
+
+.top-link {
+  @extend  .l-container;
+}
+
+.main-menu {
+  @extend .l-container;
+}
+
+/*==========  Content  ==========*/
+
+.main-content {
+  @extend .l-container, .clearfix;
+
+  .inner-main-content {
+    @extend  .l-mainContainer, .clearfix;
+    @include float-left;
+  }
+
+  .inner-right-content {
+    @extend  .l-sideContainer, .clearfix;
+    @include float-right;
+  }
+}
+
+
+/*-----  End of Content  ------*/
+
+/*==========  Footer  ==========*/
+
+.footer-corp {
+  @extend  .l-container;
+}
+
+.footer-frq {
+  @extend  .l-container;
+}
+
+.main-footer {
+  @extend  .l-container;
+}
+

@@ -1,0 +1,47 @@
+.AboutUs{
+  font-size: 14px;
+  background: white;
+  &>.icon{
+    margin: auto;
+    width: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    &>img{
+      width: 100%;
+    }
+  }
+  &>div>p{
+    margin: 10px;
+    text-indent:2em
+  }
+  &>.center{
+    height: 15px;
+    width: 100%;
+    background:rgb(240,240,244) ;
+  }
+  &>.lianxi{
+    margin-bottom: 20px;
+    &>.title{
+      color: rgb(68,68,68);
+      margin: 10px 0px 15px 10px;
+    }
+    &>.des{
+      @extend .clearfix;
+      margin: 5px 10px 0px 10px;
+      &>.first{
+        float: left;
+        width: 60px;
+      }
+      &>.second{
+        float: left;
+        width: 75%;
+        margin-left: 10px;
+      }
+
+    }
+    &>.address{
+      margin: 10px 10px 15px 10px;
+    }
+
+  }
+}

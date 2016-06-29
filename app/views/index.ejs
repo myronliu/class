@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><%= typeof title === 'undefined' ? '海融易': title %></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/font-awesome/css/font-awesome.min.css">
+
+  <script type="text/javascript" src="/nativecallback.js"></script>
+</head>
+<body>
+<header id="header">
+  <%- typeof headerData === 'undefined'?'':headerData %>
+</header>
+<div id="container">
+  <div style="height: 100%;"><%- reactOutput %></div>
+</div>
+</body>
+<script><%- typeof stateData === 'undefined'?'':stateData%></script>
+
+<!-- build:js -->
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+<!-- endbuild -->
+</html>
