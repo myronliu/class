@@ -14,12 +14,15 @@ var AnswerItem = React.createClass({
     // console.log(ischeck);
     this.props.handleChange(this.props.data, ischeck);
   },
+  handleTouch: function(){
+    this.props.handleChange(this.props.data, !this.props.data.checked);
+  },
   render: function(){
     return (
       <div>
-        <div style={{padding:'10px'}}>
+        <div style={{padding:'10px'}} onTouchEnd={this.handleTouch} >
           <CheckBox ref="cb" onTouchEnd={this.handleChange} checked={this.props.data.checked} defaultChecked={this.props.data.checked}/>
-          <span style={{display: 'inline-block', height: '20px', lineHeight: '20px', verticalAlign: 'top', marginLeft: '10px'}}>
+          <span style={{display: 'inline-block', lineHeight: '20px', verticalAlign: 'top', marginLeft: '10px', width: '80%', wordWrap: 'break-word', wordBreak: 'break-all'}}>
             {this.props.data.answer}
           </span>
         </div>
