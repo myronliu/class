@@ -5,4 +5,5 @@ module.exports={
   getanswers: '/getanswers',// 根据问题id获取答案列表
   answersvote: '/answersvote',// 投票
   getanswervotes: '/getanswervotes',// 获取投票数
+  updateanswer: '/updateanswer',// 更新答案
 }
